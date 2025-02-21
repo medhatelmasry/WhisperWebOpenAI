@@ -1,0 +1,20 @@
+﻿@page
+@model Text2AudioModel
+@{ ViewData["Title"] = "Text to Audio"; }
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <form method="post">
+        <label for="prompt">Enter text to convert to audio:</label>
+        <br />
+        <textarea type="text" name="inputText" cols="80" rows="5" required>@if (ViewData["sampleText"]!=null){@ViewData["sampleText"]}</textarea>
+        <input type="submit" value="Submit" />
+    </form>
+    <p></p>
+    @if (ViewData["AudioFilePath"] != null) {
+        <audio controls>
+            <source src="@ViewData["AudioFilePath"]" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    }
+</div>

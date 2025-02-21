@@ -1,0 +1,20 @@
+﻿@page
+@model Audio2TextModel
+@{ ViewData["Title"] = "Audio to Text Transcription"; }
+
+<div class="text-center">
+  <h1 class="display-4">@ViewData["Title"]</h1>
+  <form method="post">
+    <select asp-items="@Model.AudioFiles" name="waveFile"></select>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+@if (ViewData["AudioFile"] != null) {
+  <p></p>
+  <h3 class="text-danger">@ViewData["AudioFile"]</h3>
+}
+
+@if (ViewData["Transcription"] != null) {
+  <p class="alert alert-success">@ViewData["Transcription"]</p>
+}

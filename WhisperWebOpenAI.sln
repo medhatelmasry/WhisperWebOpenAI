@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhisperWebOpenAI", "WhisperWebOpenAI.csproj", "{E622A175-AE46-097A-3FA9-C343BF362640}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E622A175-AE46-097A-3FA9-C343BF362640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E622A175-AE46-097A-3FA9-C343BF362640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E622A175-AE46-097A-3FA9-C343BF362640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E622A175-AE46-097A-3FA9-C343BF362640}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D957B127-F97D-4A60-ABFD-765D416FE15C}
+	EndGlobalSection
+EndGlobal
